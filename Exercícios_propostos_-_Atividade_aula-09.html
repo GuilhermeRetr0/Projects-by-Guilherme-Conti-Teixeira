@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Botões de Cores</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>Escolha uma cor:</h1>
+	<button onclick="alert('Você clicou no botão com valor Amarelo')">Amarelo</button>
+	<button onclick="alert('Você clicou no botão com valor Verde')">Verde</button>
+	<button onclick="alert('Você clicou no botão com valor Vermelho')">Vermelho</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informações do Usuário</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function exibirInformacoes() {
+			var nome = prompt("Qual seu nome?");
+			var idade = prompt("Qual sua idade?");
+			var curso = prompt("Qual seu curso?");
+
+			var mensagem = "Nome: " + nome + "\nIdade: " + idade + "\nCurso: " + curso;
+		alert(mensagem);
+	}
+</script>
+</head>
+<body>
+	<h1>Preencha suas informações:</h1>
+	<button onclick="exibirInformacoes()">Iniciar</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Troco</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function calcularTroco() {
+			var nomeProduto = prompt("Qual o nome do produto?");
+			var valorProduto = parseFloat(prompt("Qual o valor do produto?"));
+			var valorPago = parseFloat(prompt("Qual o valor dado para pagar o produto?"));
+
+swift
+
+		var troco = valorPago - valorProduto;
+		var mensagem = "Produto: " + nomeProduto + "\nValor do produto: R$" + valorProduto.toFixed(2) + "\nValor pago: R$" + valorPago.toFixed(2) + "\nTroco: R$" + troco.toFixed(2);
+
+		alert(mensagem);
+	}
+</script>
+
+</head>
+<body>
+	<h1>Calculadora de Troco:</h1>
+	<button onclick="calcularTroco()">Calcular Troco</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Áreas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function calcularAreaCirculo() {
+			var raio = parseFloat(prompt("Digite o valor do raio:"));
+			var area = Math.PI * Math.pow(raio, 2);
+			var mensagem = "Área do Círculo: " + area.toFixed(2) + " u.m²";
+			alert(mensagem);
+		}
+
+javascript
+
+	function calcularAreaQuadrado() {
+		var lado = parseFloat(prompt("Digite o valor do lado:"));
+		var area = Math.pow(lado, 2);
+		var mensagem = "Área do Quadrado: " + area.toFixed(2) + " u.m²";
+		alert(mensagem);
+	}
+
+	function calcularAreaTriangulo() {
+		var base = parseFloat(prompt("Digite o valor da base:"));
+		var altura = parseFloat(prompt("Digite o valor da altura:"));
+		var area = (base * altura) / 2;
+		var mensagem = "Área do Triângulo: " + area.toFixed(2) + " u.m²";
+		alert(mensagem);
+	}
+
+	function calcularAreaTrapezio() {
+		var baseMenor = parseFloat(prompt("Digite o valor da base menor:"));
+		var baseMaior = parseFloat(prompt("Digite o valor da base maior:"));
+		var altura = parseFloat(prompt("Digite o valor da altura:"));
+		var area = ((baseMenor + baseMaior) * altura) / 2;
+		var mensagem = "Área do Trapézio: " + area.toFixed(2) + " u.m²";
+		alert(mensagem);
+	}
+</script>
+
+</head>
+<body>
+	<h1>Calculadora de Áreas:</h1>
+	<button onclick="calcularAreaCirculo()">Círculo</button>
+	<button onclick="calcularAreaQuadrado()">Quadrado</button>
+	<button onclick="calcularAreaTriangulo()">Triângulo</button>
+	<button onclick="calcularAreaTrapezio()">Trapézio</button>
+</body>
+</html>
